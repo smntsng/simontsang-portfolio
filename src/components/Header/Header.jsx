@@ -1,11 +1,10 @@
 
 import './header.css';
-import Nav from "../Nav/Nav";
 
 const Header = () => {
     return(
         <>
-            {/* <Nav /> */}
+<img src="src\assets\images\Logo\Logo.png" alt="simon tsang logo"></img>
         </>
     )
 }
