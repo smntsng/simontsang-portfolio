@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Header from './components/Header/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Title from './components/Title/Title';
+import './assets/css/style.css'
 
 
 function App() {
