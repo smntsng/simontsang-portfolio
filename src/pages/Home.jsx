@@ -1,5 +1,6 @@
-import '../assets/css/style.css';
+
 import Title from '../components/Title/Title';
+import '../assets/css/style.css'
 
 
 const Home = () => {
