@@ -19,17 +19,17 @@ h1 {
     font-style: italic;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
     transform: scale(1);
-    animation: pulse-color-change 3s infinite; /* Combined animation */
+    animation: pulse-color-change 2s infinite; /* Combined animation */
     display: inline-block;
 }
 
 @keyframes pulse-color-change {
     0%, 100% {
         transform: scale(0.95);
-        color: red;
+        color: #3E4536;
     }
     50% {
         transform: scale(1);
-        color: blue;
+        color: #808479;
     }
 }
