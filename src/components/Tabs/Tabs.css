@@ -1,0 +1,30 @@
+
+.custom-nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #3e4536 !important; 
+}
+
+.custom-nav-link.active::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #71766a; 
+    border-radius: 50%; 
+    bottom: 35px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.custom-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+/* Change color on hover */
+.custom-nav-link:hover {
+    color: #82857a !important; ; /* Change to your desired color */
+}
+
