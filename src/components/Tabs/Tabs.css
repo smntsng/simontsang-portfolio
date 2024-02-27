@@ -1,3 +1,11 @@
+/* Tabs.css */
+.custom-nav {
+    display: flex;
+    flex-direction: column; /* Display children in a column */
+    align-items: center; /* Center items horizontally */
+    width: 100%; /* Take up full width */
+    margin-top: 5%;
+}
 
 .custom-nav-link {
     position: relative;
@@ -17,14 +25,11 @@
     transform: translateX(-50%);
 }
 
-.custom-nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
-}
-
 /* Change color on hover */
 .custom-nav-link:hover {
-    color: #82857a !important; ; /* Change to your desired color */
+    color: #82857a !important; /* Change to your desired color */
 }
 
+.content-section {
+    width: 100%; 
+}
