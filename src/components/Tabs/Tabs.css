@@ -11,6 +11,8 @@
     position: relative;
     text-decoration: none;
     color: #3e4536 !important; 
+    font-family: "Raleway", sans-serif;
+    
 }
 
 .custom-nav-link.active::after {

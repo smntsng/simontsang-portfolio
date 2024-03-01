@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Tabs.css';
 import Nav from 'react-bootstrap/Nav';
 import Projects from '../Projects/Projects'; // Import your Projects component
-// import Skills from './Skills'; // Import your Skills component
+import Skills from '../Skills/Skills'; // Import your Skills component
 import Resume from '../Resume/Resume'; // Import your Resume component
 // import Contact from './Contact'; // Import your Contact component
 
@@ -17,8 +17,8 @@ const Tabs = () => {
         switch (activeTab) {
             case "link-1":
                 return <Projects />;
-            // case "link-2":
-            //     return <Skills />;
+            case "link-2":
+                return <Skills />;
             case "link-3":
                 return <Resume />;
             // case "link-4":

@@ -1,0 +1,12 @@
+.skill-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0px 400px 0px 400px;
+    
+
+}
+
+.skill-category{
+    margin: 2% 0 0 0;
+}
