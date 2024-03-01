@@ -1,3 +1,20 @@
 body{
     background-color: #E3E2DD;
+    /* overflow: auto; */
+    /* height: 150vh; */
+}
+
+.fixed-header {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Ensure the header stays on top */
+    /* Add any other styles you want for the header */
+}
+
+.container {
+    /* Add padding or margin to prevent content from being hidden behind the fixed header */
+    padding-top: 100px; /* Adjust as needed based on the height of your header */
+    height: auto;
 }

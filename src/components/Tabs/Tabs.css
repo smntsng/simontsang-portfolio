@@ -4,7 +4,7 @@
     flex-direction: column; /* Display children in a column */
     align-items: center; /* Center items horizontally */
     width: 100%; /* Take up full width */
-    margin-top: 5%;
+    margin-top: 15px;
 }
 
 .custom-nav-link {
@@ -31,5 +31,7 @@
 }
 
 .content-section {
-    width: 100%; 
+    width: 100%; /* Take up full width */
+
+
 }
