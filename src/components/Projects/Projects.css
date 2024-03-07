@@ -1,52 +1,142 @@
+/* Container for projects */
 .projects-container {
-    overflow-x: auto; /* Enable horizontal scrolling */
-    width: 80%; /* Take up full width */
+    overflow-x: auto;
+    width: 80%; /* Take up 80% of the full width */
     margin: 2% auto; /* Center horizontally */
-    height: 60vh;
+    height: 60vh; /* Set height to 60% of the viewport height */
 }
 
+/* Wrapper for project items */
 .projects-wrapper {
     display: flex; /* Use flexbox for layout */
-    height: 100%;
+    height: 100%; /* Take up full height */
 }
 
+/* Individual project item */
 .project-item {
-    position: relative;
-    flex: 0 0 auto;
-    margin-right: 20px;
+    position: relative; /* Position relative to allow absolute positioning of children */
+    flex: 0 0 auto; /* Don't grow or shrink */
+    margin-right: 20px; /* Add right margin */
     overflow: hidden; /* Ensure overlay doesn't overflow */
+    height: 100%; /* Take up full height */
 }
 
+/* Images within project items */
 .project-item img {
-    width: auto;
-    height: 100%;
-    display: block;
-    transition: transform 0.3s; /* Add a smooth transition for image transform */
+    width: auto; /* Auto width */
+    height: 100%; /* Take up full height */
+    display: block; /* Display as block element */
+    position: relative; /* Make sure the image has relative positioning */
 }
 
-.project-details {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: white;
-    z-index: 1; /* Ensure the text overlay appears above the image */
+/* Display image */
+.project-item img.display-image {
+    opacity: 1; /* Ensure the display image is visible */
 }
 
-.project-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+/* Hover image */
+.project-item img.hover-image {
+    opacity: 0; /* Initially hide the hover image */
+    position: absolute; /* Position the hover image absolutely */
+    top: 0; /* Align the hover image with the top of the project item */
+    left: 0; /* Align the hover image with the left of the project item */
+    width: 100%; /* Make the hover image fill the entire project item */
+    height: 100%; /* Make the hover image fill the entire project item */
+    transition: opacity 0.5s ease; /* Add transition effect for opacity */
+}
+
+/* Black overlay on hover image */
+.project-item img.hover-image::before {
+    content: ''; /* Add content to the pseudo-element */
+    position: absolute; /* Position the pseudo-element */
+    top: 0; /* Align the pseudo-element with the top of the hover image */
+    left: 0; /* Align the pseudo-element with the left of the hover image */
+    width: 100%; /* Make the pseudo-element fill the entire hover image */
+    height: 100%; /* Make the pseudo-element fill the entire hover image */
     background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
-    rgb()
-    opacity: 1; /* Initially visible */
-    transition: opacity 0.5s; /* Smooth transition */
+    z-index: 1; /* Ensure the overlay appears above the hover image */
 }
 
-.project-item:hover::before {
-    opacity: 0; /* Make overlay invisible on hover */
+/* Show hover image on hover */
+.project-item:hover img.hover-image {
+    opacity: 1; /* Display the hover image on hover */
+}
+
+/* Hide the display image and display the hover image on hover */
+.project-item:hover img.display-image {
+    opacity: 0; /* Hide the display image on hover */
+}
+
+/* Project details */
+.project-details {
+    position: absolute; /* Position the project details absolutely */
+    bottom: 20px; /* Align the project details to the bottom */
+    left: 20px; /* Align the project details to the left */
+    color: #E3E2DD; /* Set text color */
+    opacity: 0; /* Initially hide the project details */
+    transition: opacity 0.5s ease; /* Add transition effect for opacity */
+    font-size: 12px; /* Set font size */
+    text-align: left; /* Align text to the left */
+    margin-right: 60%;
+}
+
+
+/* Fade-in effect for project details on hover */
+.project-item:hover .project-details {
+    opacity: 1; /* Show project details */
+}
+
+/* Project icons */
+.project-icons {
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content:space-evenly; /* Align the items to the left */
+    margin-top: 10px; /* Add margin to separate the icons from the description */
+}
+
+/* Hover image */
+.project-item img.hover-image {
+    opacity: 0; /* Initially hide the hover image */
+    position: absolute; /* Position the hover image absolutely */
+    top: -100%; /* Initially position the hover image above the project item */
+    left: 0; /* Align the hover image with the left of the project item */
+    width: 100%; /* Make the hover image fill the entire project item */
+    height: 100%; /* Make the hover image fill the entire project item */
+    z-index: 1; /* Ensure the hover image appears below the project details */
+    transition: opacity 0.5s ease, top 0.5s ease; /* Add transition effect for opacity and top position */
+}
+
+/* Show hover image on hover */
+.project-item:hover img.hover-image {
+    opacity: 1; /* Display the hover image on hover */
+    top: 0; /* Slide the hover image down to its original position */
+}
+
+/* Project details */
+.project-details {
+    position: absolute; /* Position the project details absolutely */
+    bottom: 20px; /* Align the project details to the bottom */
+    left: 20px; /* Align the project details to the left */
+    color: #E3E2DD; /* Set text color */
+    opacity: 0; /* Initially hide the project details */
+    transition: opacity 0.5s ease; /* Add transition effect for opacity */
+    font-size: 12px; /* Set font size */
+    text-align: left; /* Align text to the left */
+    z-index: 2; /* Ensure the project details appear above the hover image */
+    font-family: "Raleway", sans-serif;
+
+}
+
+
+.github{
+    margin-top: 2%;
+    color: inherit; /* Use the color inherited from the parent (in this case, the color from .footer-container p) */
+    text-decoration: none; /* Remove the underline */
+
+    font-size: medium;
+    
+}
+.github:hover {
+    text-decoration: underline; /* Underline the link on hover */
 }
 
 

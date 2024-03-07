@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Projects from '../Projects/Projects'; // Import your Projects component
 import Skills from '../Skills/Skills'; // Import your Skills component
 import Resume from '../Resume/Resume'; // Import your Resume component
+import Contact from '../Contact/Contact';
 // import Contact from './Contact'; // Import your Contact component
 
 const Tabs = () => {
@@ -21,8 +22,8 @@ const Tabs = () => {
                 return <Skills />;
             case "link-3":
                 return <Resume />;
-            // case "link-4":
-            //     return <Contact />;
+            case "link-4":
+                return <Contact />;
             default:
                 return null;
         }

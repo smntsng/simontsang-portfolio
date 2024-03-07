@@ -1,0 +1,29 @@
+.Contact-container {
+    margin: 200px; /* Auto margin to center horizontally */
+    color: #3E4536;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: large;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.Contact-container a {
+    color: inherit; /* Use the color inherited from the parent (in this case, the color from .footer-container p) */
+    text-decoration: none; /* Remove the underline */
+}
+
+.Contact-container a:hover {
+    text-decoration: underline; /* Add underline on hover if desired */
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-list li {
+    margin-bottom: 10px; /* Add some spacing between items if needed */
+}
