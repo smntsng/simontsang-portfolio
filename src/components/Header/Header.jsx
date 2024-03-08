@@ -1,10 +1,11 @@
 
 import './header.css';
+import logo from "../../assets/images/logo.png"
 
 const Header = () => {
     return(
         <div className='logo'>
-            <img src="src\assets\images\Logo\Logo.png" alt="simon tsang logo"></img>
+            <img src={logo} alt="simon tsang logo"></img>
         </div>
     )
 }
