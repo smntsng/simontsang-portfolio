@@ -1,31 +1,19 @@
 import React, { useRef, useState } from 'react';
 import './Projects.css';
+// images
+import sneakerstreetscreenshot1 from "../../assets/images/sneakerstreetsscreenshot.jpg"
+
 
 const Projects = () => {
     const projectsRef = useRef(null);
-    const [isDragging, setIsDragging] = useState(false);
-    const [startX, setStartX] = useState(0);
-    const [scrollLeft, setScrollLeft] = useState(0);
+    
 
-    const handleMouseEvents = (event) => {
-        if (event.type === 'mousedown') {
-            setIsDragging(true);
-            setStartX(event.pageX - projectsRef.current.offsetLeft);
-            setScrollLeft(projectsRef.current.scrollLeft);
-        } else if (event.type === 'mouseup' || event.type === 'mouseleave') {
-            setIsDragging(false);
-        } else if (event.type === 'mousemove' && isDragging) {
-            const x = event.pageX - projectsRef.current.offsetLeft;
-            const walk = (x - startX) * 2; // Adjust the multiplier for faster or slower scrolling
-            projectsRef.current.scrollLeft = scrollLeft - walk;
-        }
-    };
 
     return (
-        <div className="projects-container" ref={projectsRef} onMouseDown={handleMouseEvents} onMouseUp={handleMouseEvents} onMouseLeave={handleMouseEvents} onMouseMove={handleMouseEvents}>
+        <div className="projects-container" ref={projectsRef} >
             <div className="projects-wrapper">
                 <div className="project-item">
-                    <img className="display-image" src="src/assets/images/Website screenshot/Sneakerstreets screen shot.jpg" alt="Sneaker Streets Project" />
+                    <img className="display-image" src={sneakerstreetscreenshot1} alt="Sneaker Streets Project" />
                     <img className="hover-image" src="src/assets/images/Website screenshot/Sneakerstreets screen shot 2.jpg" alt="Hover Image" />
                     <div className="project-details">
                         <h3>SneakerStreets Ecommerce Store</h3>
