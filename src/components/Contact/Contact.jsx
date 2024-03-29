@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <div className="Contact-container">
             <ul className="contact-list">
-                <li>GitHub: 
+                <li>GITHUB: 
                     <a href="https://github.com/SMNTSNG" target="_blank" rel="noopener noreferrer">
                      SMNTSNG
                     </a>

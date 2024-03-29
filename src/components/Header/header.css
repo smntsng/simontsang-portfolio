@@ -5,3 +5,10 @@
     left: 0;
     margin: 50px; 
 }
+
+@media screen and (max-width: 400px) {
+    .logo img {
+        width: 150px; 
+        margin: 20px; 
+    }
+}

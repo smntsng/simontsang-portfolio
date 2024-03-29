@@ -1,9 +1,9 @@
-/* Tabs.css */
+
 .custom-nav {
     display: flex;
-    flex-direction: column; /* Display children in a column */
-    align-items: center; /* Center items horizontally */
-    width: 100%; /* Take up full width */
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%; 
     margin-top: 15px;
 }
 
@@ -27,13 +27,23 @@
     transform: translateX(-50%);
 }
 
-/* Change color on hover */
+
 .custom-nav-link:hover {
-    color: #82857a !important; /* Change to your desired color */
+    color: #82857a !important; 
 }
 
 .content-section {
-    width: 100%; /* Take up full width */
+    width: 100%; 
 
 
+
+    
 }
+
+@media screen and (max-width: 400px) {
+    .custom-nav-link {
+      font-size: 14px; 
+    }
+  }
+  
+

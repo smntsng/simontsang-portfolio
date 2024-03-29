@@ -140,4 +140,27 @@
 }
 
 
+/* Allow project items to wrap onto a new line on smaller screens */
+@media screen and (max-width: 500px) {
+    .project-item {
+        width: 100%;
+        display: flex; /* Use flexbox */
+        justify-content: center; /* Center contents horizontally */
+        align-items: center; /* Center contents vertically */
+        flex-direction: column; /* Stack elements vertically */
+    }
 
+    .project-item img {
+        max-width:fit-content; /* Ensure images don't overflow their containers */
+    }
+
+    .project-details {
+        width: 50%; /* Take up full width */
+        margin-left: 5px;
+    }
+
+    .project-icons {
+        width: 50%; /* Take up full width */
+    }
+}
+  

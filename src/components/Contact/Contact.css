@@ -27,3 +27,9 @@
 .contact-list li {
     margin-bottom: 10px; /* Add some spacing between items if needed */
 }
+
+@media screen and (max-width: 400px) {
+    .Contact-container {
+        font-size: small;
+    }
+}
