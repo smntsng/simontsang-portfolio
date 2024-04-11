@@ -7,6 +7,9 @@ import harmonyhealscreenshot from "../../assets/images/harmonyhealscreenshot.jpg
 import harmonyhealscreenshot2 from "../../assets/images/harmonyhealscreenshot2.jpg"
 import labcloscreenshot from "../../assets/images/labcloscreenshot.jpg"
 import labcloscreenshot2 from "../../assets/images/labcloscreenshot2.jpg"
+import kopitiamscreenshot from "../../assets/images/kopitiamscreenshot.jpg"
+import kopitiamscreenshot2 from "../../assets/images/kopitiamscreenshot2.jpg"
+
 
 
 const Projects = () => {
@@ -15,7 +18,7 @@ const Projects = () => {
 
 
     return (
-        <div className="projects-container" ref={projectsRef} >
+        <div className="projects-container" >
             <div className="projects-wrapper">
                 <div className="project-item">
                     <img className="display-image" src={sneakerstreetscreenshot1} alt="Sneaker Streets Project" />
@@ -32,7 +35,14 @@ const Projects = () => {
                             <img width="60" height="60" src="https://img.icons8.com/officel/48/react.png" alt="React.js" />
                             <img width="60" height="60" src="https://img.icons8.com/color/48/npm.png" alt="npm" />
                         </div>
-                        <a className="github" href="https://bit.ly/SneakerStreets" target="_blank" rel="noopener noreferrer">See Details on GitHub...</a>
+                        <ul>
+                <li>
+                    <a className="github" href="https://bit.ly/SneakerStreets" target="_blank" rel="noopener noreferrer">Github</a>
+                </li>
+                <li>
+                    <a className="project" href="https://bit.ly/3SuOYmS" target="_blank" rel="noopener noreferrer">Visit Website</a>
+                </li>
+            </ul>
                     </div>
                 </div>
                 <div className="project-item">
@@ -48,7 +58,8 @@ const Projects = () => {
                             <img width="60" height="60" src="https://img.icons8.com/color/48/javascript--v1.png" alt="JavaScript" />
                             <img width="60" height="60" src="https://img.icons8.com/fluency/60/bootstrap.png" alt="Bootstrap" /> 
                         </div>
-                        <a className="github" href="https://bit.ly/HarmonyHeal" target="_blank" rel="noopener noreferrer">See Details on GitHub...</a>
+                        <a className="github" href="https://bit.ly/HarmonyHeal" target="_blank" rel="noopener noreferrer">Github</a>
+                        <a className="project" href="https://bit.ly/3w8Oc7o" target="_blank" rel="noopener noreferrer">Visit Website</a>
                     </div>
                 </div>
 
@@ -62,7 +73,25 @@ const Projects = () => {
                         <div className="project-icons">
                         <img width="60" height="60" src="https://img.icons8.com/windows/48/wix.png" alt="Wix" />
                         </div>
-                        <a className="github" href="https://github.com/yourusername/project1" target="_blank" rel="noopener noreferrer">See Website</a>
+                        <a className="github" href="https://bit.ly/HarmonyHeal" target="_blank" rel="noopener noreferrer">Github</a>
+                        <a className="project" href="https://www.labclo.com/" target="_blank" rel="noopener noreferrer">Visit Website</a>
+                        
+                    </div>
+                </div>
+
+                <div className="project-item">
+                    <img className="display-image" src={kopitiamscreenshot} alt="Sneaker Streets Project" />
+                    <img className="hover-image" src={kopitiamscreenshot2} alt="Hover Image" />
+                    <div className="project-details">
+                        <h3>Kopitiam Food Ordering Website</h3>
+                        <p>Labclo is a live Ecommerce store built using Wix with an inventory of over 600 items
+</p>
+                        <div className="project-icons">
+                        <img width="60" height="60" src="https://img.icons8.com/windows/48/wix.png" alt="Wix" />
+                        </div>
+                        <a className="github" href="https://bit.ly/HarmonyHeal" target="_blank" rel="noopener noreferrer">Github</a>
+                        <a className="project" href="https://www.labclo.com/" target="_blank" rel="noopener noreferrer">Visit Website</a>
+                        
                     </div>
                 </div>
             
